@@ -1,0 +1,25 @@
+char* strcpy(char *strDest, const char* strSrc)
+
+{
+
+       assert(strSrc != NULL );
+
+       assert(strDest != NULL);
+
+       int i;
+
+       char *address = strDest;
+
+ 
+
+    for(i = 0; strSrc[i] != '\0'; i++)
+
+              strDest[i] = strSrc[i];
+
+       strDest[i] = '\0';
+
+ 
+
+       return address;
+
+}
